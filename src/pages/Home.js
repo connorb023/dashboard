@@ -8,26 +8,28 @@ const Dashboard = () => {
         <div style={{ marginRight: '1rem' }}>
           <h2>Reviews</h2>
           <div style={{ backgroundColor: 'lightblue', height: '100px', width: '200px' }}>
-            {/* Add content for reviews container here */}
+          <p>1,281</p>
           </div>
         </div>
         <div style={{ marginRight: '1rem' }}>
           <h2>Average Rating</h2>
           <div style={{ backgroundColor: 'lightgreen', height: '100px', width: '200px' }}>
-            {/* Add content for average rating container here */}
+          <p>4.6</p>
           </div>
         </div>
         <div style={{ marginRight: '1rem' }}>
           <h2>Sentiment Analysis</h2>
           <div style={{ backgroundColor: 'pink', height: '100px', width: '200px' }}>
-            {/* Add content for sentiment analysis container here */}
+          <p>960</p>
+          <p>122</p>
+          <p>321</p>
           </div>
         </div>
       </div>
       <div>
         <h2>Website Visitors</h2>
         <div style={{ backgroundColor: 'lightyellow', height: '100px', width: '620px' }}>
-          {/* Add content for website visitors container here */}
+        <p>821</p>
         </div>
       </div>
     </div>
