@@ -3,7 +3,6 @@ import React from 'react';
 const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ marginRight: '1rem' }}>
           <h2>Reviews</h2>
