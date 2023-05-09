@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import Reviews from './components/Reviews';
 import Rating from './components/Rating';
 import SentimentAnalysis from './components/SentimentAnalysis';
-import Visitors from './components/Visitors';
+import Visitors from './components/WebsiteVisitors';
 
 function App() {
   return (
