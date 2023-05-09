@@ -1,5 +1,6 @@
 import reviewsData from '../data/reviews.json';
 import '../styles/Rating.css';
+import './components/Rating'
 
 function Rating() {
   const ratings = reviewsData.map((review) => review.rating);
