@@ -1,38 +1,17 @@
-import { useState } from 'react';
-import reviewsData from '../data/reviews.json';
-import '../styles/Reviews.css';
+import React from 'react';
 
-function Reviews() {
-  const [reviews, setReviews] = useState(reviewsData);
-  const [newReview, setNewReview] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    setReviews([...reviews, { text: newReview }]);
-    setNewReview('');
-  }
-
+const Reviews = () => {
   return (
-    <div className="reviews">
+    <div>
       <h1>Reviews</h1>
+      <p>Here are some reviews:</p>
       <ul>
-        {reviews.map((review, index) => (
-          <li key={index}>{review.text}</li>
-        ))}
+        <li>5 stars: Great product!</li>
+        <li>4 stars: Good product.</li>
+        <li>3 stars: Average product.</li>
       </ul>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Add a Review:
-          <input
-            type="text"
-            value={newReview}
-            onChange={(event) => setNewReview(event.target.value)}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
     </div>
   );
-}
+};
 
 export default Reviews;
