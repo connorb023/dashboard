@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Reviews from './Reviews';
-import AverageRating from './AverageRating';
-import SentimentAnalysis from './SentimentAnalysis';
-import WebsiteVisitors from './WebsiteVisitors';
-import Settings from './Settings';
+import Reviews from './components/Reviews';
+import AverageRating from './components/AverageRating';
+import SentimentAnalysis from './components/SentimentAnalysis';
+import WebsiteVisitors from './components/WebsiteVisitors';
+import Settings from './components/Settings';
 
 const App = () => {
   return (
