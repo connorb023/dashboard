@@ -11,15 +11,13 @@ import './styles/App.css';
 
 function App() {
   return (
-    <div className="app-container">
+    <BrowserRouter>
       <Sidebar />
-      <div className="main-content">
-        <Reviews />
-        <Rating />
-        <SentimentAnalysis />
-        <Visitors />
-      </div>
-    </div>
+      <Route path="/" exact component={Reviews} />
+      <Route path="/rating" component={Rating} />
+      <Route path="/sentiment" component={SentimentAnalysis} />
+      <Route path="/visitors" component={Visitors} />
+    </BrowserRouter>
   );
 }
 

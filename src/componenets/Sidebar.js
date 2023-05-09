@@ -1,18 +1,27 @@
-import React from 'react';
-import './Sidebar.css';
+import { Link } from 'react-router-dom';
+import '../styles/Sidebar.css';
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <ul className="nav-links">
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#rating">Rating</a></li>
-        <li><a href="#sentiment">Sentiment Analysis</a></li>
-        <li><a href="#visitors">Website Visitors</a></li>
+      <ul>
+        <li>
+          <Link to="/">Reviews</Link>
+        </li>
+        <li>
+          <Link to="/rating">Average Rating</Link>
+        </li>
+        <li>
+          <Link to="/sentiment">Sentiment Analysis</Link>
+        </li>
+        <li>
+          <Link to="/visitors">Website Visitors</Link>
+        </li>
       </ul>
     </div>
   );
 }
 
 export default Sidebar;
+
 
